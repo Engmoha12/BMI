@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart BMI Calculator | Modern Health Tool</title>
-    <meta name="description" content="Calculate your Body Mass Index (BMI) with our smart, modern, and responsive tool. Supports metric and imperial units.">
+    <meta name="description"
+        content="Calculate your Body Mass Index (BMI) with our smart, modern, and responsive tool. Supports metric and imperial units.">
     <!-- Google Fonts: Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +18,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-light">
 
     <!-- Navbar / Header -->
@@ -28,7 +31,8 @@
                 <span>Smart <span class="text-primary">BMI</span> Calculator</span>
             </a>
             <div class="d-flex align-items-center">
-                <button id="themeToggle" class="btn btn-link text-body p-2 border-0 shadow-none" aria-label="Toggle Theme">
+                <button id="themeToggle" class="btn btn-link text-body p-2 border-0 shadow-none"
+                    aria-label="Toggle Theme">
                     <i class="fas fa-moon fs-5"></i>
                 </button>
             </div>
@@ -52,14 +56,19 @@
                                 <label class="form-label fw-semibold mb-3">Gender</label>
                                 <div class="row g-2">
                                     <div class="col">
-                                        <input type="radio" class="btn-check" name="gender" id="male" value="male" checked>
-                                        <label class="btn btn-outline-primary w-100 py-2 d-flex flex-column align-items-center" for="male">
+                                        <input type="radio" class="btn-check" name="gender" id="male" value="male"
+                                            checked>
+                                        <label
+                                            class="btn btn-outline-primary w-100 py-2 d-flex flex-column align-items-center"
+                                            for="male">
                                             <i class="fas fa-mars mb-1"></i> Male
                                         </label>
                                     </div>
                                     <div class="col">
                                         <input type="radio" class="btn-check" name="gender" id="female" value="female">
-                                        <label class="btn btn-outline-primary w-100 py-2 d-flex flex-column align-items-center" for="female">
+                                        <label
+                                            class="btn btn-outline-primary w-100 py-2 d-flex flex-column align-items-center"
+                                            for="female">
                                             <i class="fas fa-venus mb-1"></i> Female
                                         </label>
                                     </div>
@@ -68,12 +77,14 @@
 
                             <!-- Age Input -->
                             <div class="mb-4">
-                                <label for="age" class="form-label fw-semibold">Age <small class="text-muted fw-normal">(Optional)</small></label>
+                                <label for="age" class="form-label fw-semibold">Age <small
+                                        class="text-muted fw-normal">(Optional)</small></label>
                                 <div class="input-group">
                                     <span class="input-group-text bg-transparent border-end-0">
                                         <i class="fas fa-calendar-alt text-muted"></i>
                                     </span>
-                                    <input type="number" class="form-control border-start-0 ps-0" id="age" placeholder="e.g. 25" min="2" max="120">
+                                    <input type="number" class="form-control border-start-0 ps-0" id="age"
+                                        placeholder="e.g. 25" min="2" max="120">
                                 </div>
                             </div>
 
@@ -83,7 +94,8 @@
                                     <label class="form-label fw-semibold mb-0">Height</label>
                                     <div class="form-check form-switch mb-0">
                                         <input class="form-check-input" type="checkbox" id="heightUnitToggle">
-                                        <label class="form-check-label small text-muted" for="heightUnitToggle">Feet/Inches</label>
+                                        <label class="form-check-label small text-muted"
+                                            for="heightUnitToggle">Feet/Inches</label>
                                     </div>
                                 </div>
 
@@ -100,13 +112,15 @@
                                     <div class="row g-2">
                                         <div class="col">
                                             <div class="input-group">
-                                                <input type="number" class="form-control" id="heightFt" placeholder="ft">
+                                                <input type="number" class="form-control" id="heightFt"
+                                                    placeholder="ft">
                                                 <span class="input-group-text">ft</span>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="input-group">
-                                                <input type="number" class="form-control" id="heightIn" placeholder="in">
+                                                <input type="number" class="form-control" id="heightIn"
+                                                    placeholder="in">
                                                 <span class="input-group-text">in</span>
                                             </div>
                                         </div>
@@ -120,7 +134,8 @@
                                     <label class="form-label fw-semibold mb-0">Weight</label>
                                     <div class="form-check form-switch mb-0">
                                         <input class="form-check-input" type="checkbox" id="weightUnitToggle">
-                                        <label class="form-check-label small text-muted" for="weightUnitToggle">Lbs</label>
+                                        <label class="form-check-label small text-muted"
+                                            for="weightUnitToggle">Lbs</label>
                                     </div>
                                 </div>
 
@@ -150,7 +165,8 @@
                                     <i class="fas fa-chart-line text-primary opacity-25" style="font-size: 5rem;"></i>
                                 </div>
                                 <h3 class="fw-bold">Ready to Calculate?</h3>
-                                <p class="text-muted">Enter your details on the left to see your BMI result and health insights.</p>
+                                <p class="text-muted">Enter your details on the left to see your BMI result and health
+                                    insights.</p>
                             </div>
                         </div>
 
@@ -166,10 +182,14 @@
                             <!-- BMI Scale Indicator -->
                             <div class="bmi-scale mb-5">
                                 <div class="progress mb-2" style="height: 12px; border-radius: 6px;">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 18.5%" aria-valuenow="18.5" aria-valuemin="0" aria-valuemax="100"></div>
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 26.5%" aria-valuenow="26.5" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 18.5%"
+                                        aria-valuenow="18.5" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 30%"
+                                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 26.5%"
+                                        aria-valuenow="26.5" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="d-flex justify-content-around text-muted small px-1">
                                     <span>18.5</span>
@@ -177,7 +197,8 @@
                                     <span>30</span>
                                 </div>
                                 <div class="bmi-pointer-container mt-n4 position-relative" style="height: 20px;">
-                                    <div id="bmiPointer" class="bmi-pointer"><i class="fas fa-caret-up fs-2 text-primary"></i></div>
+                                    <div id="bmiPointer" class="bmi-pointer"><i
+                                            class="fas fa-caret-up fs-2 text-primary"></i></div>
                                 </div>
                             </div>
 
@@ -189,7 +210,8 @@
                                     <h5 class="mb-0 fw-bold">Health Insight</h5>
                                 </div>
                                 <p class="mb-0 text-muted" id="bmiAdvice">
-                                    Your BMI falls within the healthy category. Maintaining a balanced diet and regular physical activity is key to staying here!
+                                    Your BMI falls within the healthy category. Maintaining a balanced diet and regular
+                                    physical activity is key to staying here!
                                 </p>
                             </div>
                         </div>
@@ -205,17 +227,20 @@
             <div class="col-md-4 text-center p-4">
                 <i class="fas fa-info-circle text-primary fs-2 mb-3"></i>
                 <h5 class="fw-bold">What is BMI?</h5>
-                <p class="text-muted small">Body Mass Index (BMI) is a measurement of a person's leanness or corpulence based on their height and weight.</p>
+                <p class="text-muted small">Body Mass Index (BMI) is a measurement of a person's leanness or corpulence
+                    based on their height and weight.</p>
             </div>
             <div class="col-md-4 text-center p-4">
                 <i class="fas fa-balance-scale text-primary fs-2 mb-3"></i>
                 <h5 class="fw-bold">Formula Used</h5>
-                <p class="text-muted small">We use the standard metric formula: weight (kg) / [height (m)]². All conversions are handled automatically.</p>
+                <p class="text-muted small">We use the standard metric formula: weight (kg) / [height (m)]². All
+                    conversions are handled automatically.</p>
             </div>
             <div class="col-md-4 text-center p-4">
                 <i class="fas fa-user-shield text-primary fs-2 mb-3"></i>
                 <h5 class="fw-bold">Your Privacy</h5>
-                <p class="text-muted small">Your data is processed locally on your browser and is never sent to any server. Your health data stays with you.</p>
+                <p class="text-muted small">Your data is processed locally on your browser and is never sent to any
+                    server. Your health data stays with you.</p>
             </div>
         </div>
     </section>
@@ -223,7 +248,8 @@
     <footer class="py-5 bg-white border-top">
         <div class="container text-center">
             <p class="mb-2 fw-semibold">Smart BMI Calculator</p>
-            <p class="text-muted small mb-0">&copy; 2024 Healthy Living Solutions. Developed with <i class="fas fa-heart text-danger mx-1"></i> for better health.</p>
+            <p class="text-muted small mb-0">&copy; 2026 Healthy Living Solutions. Developed with <i
+                    class="fas fa-heart text-danger mx-1"></i> Engr Opposites.</p>
         </div>
     </footer>
 
@@ -232,4 +258,5 @@
     <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
+
 </html>
